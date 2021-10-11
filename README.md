@@ -50,7 +50,7 @@ We start by looking for the index of the bucket where the key value pair will be
 We start by finding the index of the bucket where the key value pair should be stored with the same method as the insert function. We then check if this key this key is present in this bucket. If it is, we return the value associated to it. If it isn't, we return None. 
 
 
-![Search Function](Visualizations/get.png)
+![Search Function](Visualizations/search.png)
 
 
 # Speed Comparison Between Linear and Hash Table Search:
