@@ -8,7 +8,7 @@ This is a Final Project in the Communications for Analytics class at the Univers
 
 Hash tables are a type of data structure primarily used to efficiently implement key value lookup operations. They are especially good at doing this because they partition the search space into well-defined regions, meaning we can significantly reduce the amount of data we need to search through if we know which region our value is in. Structurally, a hash table is an array like object that contains a set number of buckets in which values are stored strategically according to a hash function. The hash function takes in a key, which is usually a string but can be any kind of data type, as an input to compute the hash code. The hash code is an integer which, ideally, is specific to this key. We can then take the hash code modulo the number of buckets to find the index number where the value is stored, with the index telling us which bucket the data we’re looking for will be stored in. 
 
-![Hash Table Overview](Visualizations/overview.png)
+![Hash Table Overview](Visualizations/Overview.png)
 
 # Code Implementation: 
 
@@ -43,7 +43,7 @@ We start by finding the index of the bucket where the key value pair should be s
 
 We ran speed tests to compare how quickly we could find a value within a dataset of 5000 random integers using a linear search method and our hash table implementation. We found that on average, our hash table retrieves data hundreds of times faster than a linear search does.
 
-![Speed Test](Visualizations/comparison.png)
+![Speed Test](Visualizations/Time_comparison.png)
 
 # Motivation:
 
