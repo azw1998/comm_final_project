@@ -8,17 +8,22 @@ This is a Final Project in the Communications for Analytics class at the Univers
 
 Hash tables are a type of data structure primarily used to efficiently implement key value lookup operations. They are especially good at doing this because they partition the search space into well-defined regions, meaning we can significantly reduce the amount of data we need to search through if we know which region our value is in. Structurally, a hash table is an array like object that contains a set number of buckets in which values are stored strategically according to a hash function. The hash function takes in a key, which is usually a string but can be any kind of data type, as an input to compute the hash code. The hash code is an integer which, ideally, is specific to this key. We can then take the hash code modulo the number of buckets to find the index number where the value is stored, with the index telling us which bucket the data we’re looking for will be stored in. 
 
+
 ![Hash Table Overview](Visualizations/Overview.png)
+
 
 # Code Implementation: 
 
-### Hash Table Construction:
+
+# Hash Table Construction:
 
 We start by building an empty hash table with n numbers of buckets by creating a list of n lists:
 
+
 ![Hash Table Construction](Visualizations/construction.png)
 
-### Hash Function:
+
+# Hash Function:
 
 We wrote a hash function to calculate the hash code of a given key. 
 
@@ -28,25 +33,33 @@ We wrote a hash function to calculate the hash code of a given key.
  
  -> If the key is neither a string nor an integer it is set to None.
  
+ 
 ![Hash Function](Visualizations/hash_function.png)
 
-### Inserting Into a Hash Table: 
+
+# Inserting Into a Hash Table: 
 
 We start by looking for the index of the bucket where the key value pair will be stored. We find this index by computing the hash code of the key modulo the number of buckets. We then check if this key already exists in this bucket. If so, we overwrite it, if not we add the new key value pair. 
 
+
 ![Put Function](Visualizations/put.png)
 
-### Searching Hash Tables:
+
+# Searching Hash Tables:
 
 We start by finding the index of the bucket where the key value pair should be stored with the same method as the insert function. We then check if this key this key is present in this bucket. If it is, we return the value associated to it. If it isn't, we return None. 
 
+
 ![Search Function](Visualizations/get.png)
+
 
 # Speed Comparison Between Linear and Hash Table Search:
 
 We ran speed tests to compare how quickly we could find a value within a dataset of 5000 random integers using a linear search method and our hash table implementation. We found that on average, our hash table retrieves data hundreds of times faster than a linear search does.
 
-![Speed Test](Visualizations/Time_comparison.png)
+
+![Speed Test](Visualizations/Time_Comparison.png)
+
 
 # Motivation:
 
