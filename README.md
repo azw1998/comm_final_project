@@ -21,8 +21,11 @@ We start by building an empty hash table with n numbers of buckets by creating a
 ### Hash Function:
 
 We wrote a hash function to calculate the hash code of a given key. 
+
  -> If the key is an integer: the hash code is set to that integer. 
+ 
  -> If the key is a string: we use the Unicode values of characters in the below calculation to compute the hash code.
+ 
  -> If the key is neither a string nor an integer it is set to None.
  
 ![Hash Function](Visualizations/hash_function.png)
