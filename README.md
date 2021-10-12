@@ -1,4 +1,4 @@
-# comm_final_project
+# Hash Tables
 
 The aim of this project is to introduce the topic of hash tables to students in a data science master's program. The repo includes presentation slides going over the conceptual overview of how hash tables work, code implementation on how to build, insert, and pull from a hash table, and runtime comparisons between hash table search and linear search. It also includes a jupyter notebook with all the code used in the presentation.
 
